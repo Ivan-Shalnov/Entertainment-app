@@ -1,0 +1,12 @@
+@use '/src/sass/vars' as *;
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: $breakpointSm;
+  @media screen and (min-width: $breakpointMd) {
+    max-width: $breakpointMd;
+  }
+  @media screen and (min-width: $breakpointLg) {
+    max-width: $breakpointLg;
+  }
+}

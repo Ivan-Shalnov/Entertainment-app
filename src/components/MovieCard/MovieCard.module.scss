@@ -1,0 +1,86 @@
+@use '/src/sass/vars' as *;
+.wrap {
+  position: relative;
+}
+.thumbnail {
+  border-radius: 8px;
+}
+.bookmarkBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-block;
+  padding: 10px;
+  background: rgba($darkBgColor, 0.8);
+  border-radius: 50%;
+  color: $primaryColor;
+  transition: $transition;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $primaryColor;
+    color: $darkBgColor;
+    stroke: currentColor;
+  }
+  svg {
+    width: 12px;
+    stroke: currentColor;
+  }
+}
+.containerInfo {
+  margin-top: 8px;
+  color: $primaryColor;
+  .list {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 14px;
+    opacity: 0.75;
+
+    span {
+      display: inline-flex;
+      align-items: center;
+    }
+    span:not(:last-child) {
+      margin-right: 8px;
+      &::after {
+        margin-left: 8px;
+        content: '';
+        display: inline-block;
+        opacity: 0.5;
+        width: 3px;
+        height: 3px;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .icon {
+        margin-right: 5px;
+        width: 12px;
+        display: inline-block;
+      }
+      .title {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+      }
+      @media screen and (min-width: $breakpointMd) {
+        font-size: 15px;
+        line-height: 19px;
+        .title {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  &--positionInside {
+    margin-top: 0px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+}

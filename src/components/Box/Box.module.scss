@@ -1,0 +1,6 @@
+@use '/src/sass/vars' as *;
+.box {
+  padding: 25px;
+  border-radius: 10px;
+  background: $lightBGcolor;
+}

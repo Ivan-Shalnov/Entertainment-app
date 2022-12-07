@@ -1,0 +1,39 @@
+@use '/src/sass/vars' as *;
+.logo {
+  margin: 50px auto 60px auto;
+  display: block;
+  width: 32px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 375px;
+}
+.box {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.title {
+  margin-bottom: 40px;
+}
+.inputsContainer {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.submitBtn {
+  margin-bottom: 25px;
+  width: 100%;
+}
+.text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: $primaryColor;
+}
+.link {
+  color: $accentColor;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+@use '/src/sass/vars' as *;
+.headerL {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.3125px;
+  color: $primaryColor;
+}
+@media screen and (min-width: 768px) {
+  .headerL {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+  }
+}

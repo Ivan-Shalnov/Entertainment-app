@@ -1,0 +1,20 @@
+@use '/src/sass/vars' as *;
+.button {
+  padding: 15px;
+  border-radius: 6px;
+
+  background: $accentColor;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+
+  color: $primaryColor;
+  cursor: pointer;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: $primaryColor;
+    color: $lightBGcolor;
+  }
+}

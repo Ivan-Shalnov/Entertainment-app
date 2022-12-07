@@ -1,0 +1,45 @@
+@use '/src/sass/vars' as *;
+
+.wrap {
+  position: relative;
+}
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $secondaryColor;
+  padding: 0 15px 15px 15px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: rgba($primaryColor, 0.5);
+  background-color: transparent;
+  transition: var(--transition);
+  caret-color: $accentColor;
+  &:not(:placeholder-shown) {
+    color: $primaryColor;
+  }
+  &:focus {
+    outline: none;
+    border-color: $primaryColor;
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-internal-autofill-selected {
+    -webkit-text-fill-color: $primaryColor;
+    -webkit-box-shadow: 0 0 0px 1000px $lightBGcolor inset !important;
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    line-height: 19px !important;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: 15px;
+  right: 7px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  color: $accentColor;
+}
