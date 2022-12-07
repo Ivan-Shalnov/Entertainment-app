@@ -7,7 +7,6 @@ import { Home } from 'pages/Home/Home';
 import { TvSeries } from 'pages/TvSeries/TvSeries';
 import { MoviesPage } from 'pages/Movies/Movies';
 import { BookmarkedPage } from 'pages/Bookmarked/Bookmarked';
-import { AppContainer } from './App.styled';
 import { Login } from 'pages/Login/Login';
 import { SignUp } from 'pages/SignUp/SignUp';
 

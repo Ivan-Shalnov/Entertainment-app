@@ -1,4 +1,4 @@
-import { Header, List } from './RecommendedSection.styled';
+import { Header } from './RecommendedSection.styled';
 import data from 'data.json';
 import { Container } from 'components/common.styled';
 import { MovieList } from 'components/MovieList/MovieList';

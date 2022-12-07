@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { RecommendedSection } from 'components/RecommendedSection/RecommendedSection';
 import { SearchBar } from 'components/SearchBar/SearchBar';
 import { Trending } from 'components/Trending/Trending';

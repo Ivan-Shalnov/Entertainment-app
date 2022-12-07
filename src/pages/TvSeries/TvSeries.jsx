@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { SearchBar } from 'components/SearchBar/SearchBar';
 import data from 'data.json';
 import { MovieList } from 'components/MovieList/MovieList';
